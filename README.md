@@ -1,6 +1,6 @@
 # Hosted here: https://saurabhp.herokuapp.com/
 
-### Technologies used
+### Technologies used:
 
 * React
 * Styled components
