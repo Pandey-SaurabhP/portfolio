@@ -1,0 +1,42 @@
+.homescreen-main{
+    width: 100%;
+    /* background-color: lime; */
+    background-color: rgb(107, 107, 107);
+    height: calc(100vh);
+    display: flex;
+    /* background-image: (to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), */
+    /* background-image: url("/images/desk.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.homescreen-text{
+    color: white;
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 400%;
+    font-weight: bolder;
+    width: 50%;
+    -webkit-text-stroke: 1px black;
+    /* text-shadow: 1px 1px 2px cyan; */
+}
+
+.Homescreen2-2{
+    transition: all ease-out 0.4s;
+    color: white; 
+}
+
+.icons:hover{
+    color: white;
+    transition: all ease-in-out 0.2s;
+    scale: 1.25;
+}
+
+.icons2{
+    color: white;
+}
+.icons2:hover{
+    color: white;
+    transition: all ease-in-out 0.2s;
+    scale: 1.25;
+}

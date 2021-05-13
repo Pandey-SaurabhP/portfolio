@@ -1,0 +1,10 @@
+.navbar-color{
+    transition: all 0.25s ease-out;
+    background-color: darkgray
+}
+
+.heading{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
