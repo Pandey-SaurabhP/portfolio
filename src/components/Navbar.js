@@ -32,7 +32,7 @@ function Navbar() {
                 <MenuImg src = "https://s3.amazonaws.com/codechef_shared/sites/all/themes/abessive/logo.svg" alt = "logo" />
             </a>
 
-            <a href = "codeforces.com/profile/pSaurabh">
+            <a href = "https://codeforces.com/profile/pSaurabh">
                 <MenuImg src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Codeforces_logo.svg" alt = "logo" />
             </a>
 
