@@ -63,6 +63,6 @@ const MenuImg = styled.img`
     transition: ease-in-out all 0.2s;
 
     &:hover {
-        scale: 1.5
+        -webkit-transform : scale(1.25);
     }
 `

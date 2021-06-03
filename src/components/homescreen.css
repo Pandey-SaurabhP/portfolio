@@ -21,7 +21,7 @@
     /* text-shadow: 1px 1px 2px cyan; */
 }
 
-.Homescreen2-2{
+.Animate{
     transition: all ease-out 0.4s;
     color: white; 
 }
@@ -29,7 +29,6 @@
 .icons:hover{
     color: white;
     transition: all ease-in-out 0.2s;
-    scale: 1.25;
 }
 
 .icons2{
@@ -38,5 +37,5 @@
 .icons2:hover{
     color: white;
     transition: all ease-in-out 0.2s;
-    scale: 1.25;
+    -webkit-transform : scale(1.25);
 }

@@ -56,7 +56,6 @@ function Homescreen(){
     }, [blink]); 
 
     const [show, setshow] = useState(0);
-
     useEffect(() => {
         window.addEventListener('scroll', () => {
             if(window.scrollY > 200){
@@ -86,67 +85,100 @@ function Homescreen(){
                 <HomescreenImg src = {'/images/dragon.jpg'} alt = "My Image" />
             </div>
 
-            <Homescreen2 className = {`${show && 'Homescreen2-2'}`}>
+            <Details className = {`${show && 'Animate'}`}>
                 <Aboutme>
-                    <Aboutmeheading>About Me</Aboutmeheading>
+                    <Heading>
+                        About Me
+                    </Heading>
                     <p>Hi! I am Saurabh Pandey, a 12th grader passionate about exploring new technologies in Computer Science and related fields</p>
                     <p>I'm also an active competitive programmer on Codechef and Codeforces platform</p>
-                    <p>So far I have developed and implemented logics for multiple games in C++ and have successfully developed and deployed a website</p>
+                    <p>So far I have developed logics for multiple games in C++ and also have successfully developed and deployed a website</p>
                 </Aboutme>
-            </Homescreen2>
 
-            <Homescreen3>
+                <Projects>
+                    <Heading>
+                        Projects
+                    </Heading>   
+
+                    <ProjectSamples>
+                        <ProjectSampleAbout>
+                            <SampleImg src = {'/images/SnakeGameSample.png'} alt = "My Image" />
+                            <p>
+                                <p>The classic snake game.</p>
+                                <p>Made using Vanilla JavaScript, HTML and CSS.</p>
+                                <a className = "link" href="saurabhpandey.herokuapp.com">saurabhpandey.herokuapp.com</a>
+                            </p>
+                        </ProjectSampleAbout>
+
+                        <ProjectSampleAbout>
+                            <p>
+                                <p>Shortest Path Feeder</p>
+                                <p>A game logic develoved using C++. Snake automatically eats the food</p>
+                            </p>
+                            <SampleImg src = {'/images/feeder.png'} alt = "My Image" />
+                        </ProjectSampleAbout>
+
+                        <ProjectSampleAbout>
+                            More to be added soon...
+                        </ProjectSampleAbout>
+                        
+                    </ProjectSamples>
+                </Projects>
+
                 <Skills>
-                    Skills 
+                    <Heading>
+                        Skills
+                    </Heading>
+
+                    <IconContainerDiv>
+                        <IconContainer>
+                            <Onmr>
+                                <IconDiv><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="" className="" /></IconDiv>
+                                <p>C++</p>
+                            </Onmr>
+                            <Onmr>
+                                <IconDiv><FontAwesomeIcon className = 'icons' icon = {faHtml5} size = '2x' color = 'red'/></IconDiv>
+                                <p>HTML5</p>
+                            </Onmr>
+                            <Onmr>
+                                <IconDiv><FontAwesomeIcon className = 'icons' icon = {faCss3} size = '2x' color = 'blue' /></IconDiv>
+                                <p>CSS3</p>
+                            </Onmr>
+                            <Onmr>
+                                <IconDiv><FontAwesomeIcon className = 'icons' icon = {faJs} size = '2x' color = 'orange' /></IconDiv>
+                                <p>JavaScript</p>
+                            </Onmr>
+                            <Onmr>
+                                <IconDiv><FontAwesomeIcon className = 'icons' icon = {faReact} size = '2x' color = 'cyan' /></IconDiv>
+                                <p>React</p>
+                            </Onmr>
+                        </IconContainer>
+                        
+                        <IconContainer>
+                            <Onmr>
+                                <p>Python</p>
+                                <IconDiv><FontAwesomeIcon className = 'icons' icon = {faPython} size = '2x' color = 'yellow' /></IconDiv>
+                            </Onmr>
+                            <Onmr>
+                                <p>Algorithms</p>
+                                <IconDiv><FontAwesomeIcon className = 'icons' icon = {faCode} size = '2x' color = 'grey' /></IconDiv>
+                            </Onmr>
+                            <Onmr>
+                                <p>Data Structures</p>
+                                <IconDiv><FontAwesomeIcon className = 'icons' icon = {faCodeBranch} size = '2x' color = 'purple'/></IconDiv>
+                            </Onmr>
+                            <Onmr>
+                                <p>Java</p>
+                                <IconDiv><FontAwesomeIcon className = 'icons' icon = {faJava} size = '2x' color = 'blue' /></IconDiv>
+                            </Onmr>
+                            <Onmr>
+                                <p>Illustration</p>
+                                <IconDiv><FontAwesomeIcon className = 'icons' icon = {faPencilRuler} size = '2x' color = 'orange' /></IconDiv>
+                            </Onmr>
+                        </IconContainer>
+                    </IconContainerDiv>
                 </Skills>
-                <IconContainerDiv>
-                    <IconContainer>
-                        <Onmr>
-                            <IconDiv><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="" className="" /></IconDiv>
-                            <p>C++</p>
-                        </Onmr>
-                        <Onmr>
-                            <IconDiv><FontAwesomeIcon className = 'icons' icon = {faHtml5} size = '2x' color = 'red'/></IconDiv>
-                            <p>HTML5</p>
-                        </Onmr>
-                        <Onmr>
-                            <IconDiv><FontAwesomeIcon className = 'icons' icon = {faCss3} size = '2x' color = 'blue' /></IconDiv>
-                            <p>CSS3</p>
-                        </Onmr>
-                        <Onmr>
-                            <IconDiv><FontAwesomeIcon className = 'icons' icon = {faJs} size = '2x' color = 'orange' /></IconDiv>
-                            <p>JavaScript</p>
-                        </Onmr>
-                        <Onmr>
-                            <IconDiv><FontAwesomeIcon className = 'icons' icon = {faReact} size = '2x' color = 'cyan' /></IconDiv>
-                            <p>React</p>
-                        </Onmr>
-                    </IconContainer>
-                    
-                    <IconContainer>
-                        <Onmr>
-                            <p>Python</p>
-                            <IconDiv><FontAwesomeIcon className = 'icons' icon = {faPython} size = '2x' color = 'yellow' /></IconDiv>
-                        </Onmr>
-                        <Onmr>
-                            <p>Algorithms</p>
-                            <IconDiv><FontAwesomeIcon className = 'icons' icon = {faCode} size = '2x' color = 'grey' /></IconDiv>
-                        </Onmr>
-                        <Onmr>
-                            <p>Data Structures</p>
-                            <IconDiv><FontAwesomeIcon className = 'icons' icon = {faCodeBranch} size = '2x' color = 'purple'/></IconDiv>
-                        </Onmr>
-                        <Onmr>
-                            <p>Java</p>
-                            <IconDiv><FontAwesomeIcon className = 'icons' icon = {faJava} size = '2x' color = 'blue' /></IconDiv>
-                        </Onmr>
-                        <Onmr>
-                            <p>Vector Design</p>
-                            <IconDiv><FontAwesomeIcon className = 'icons' icon = {faPencilRuler} size = '2x' color = 'orange' /></IconDiv>
-                        </Onmr>
-                    </IconContainer>
-                </IconContainerDiv>
-            </Homescreen3>
+            </Details>
 
             <Footer>
                 <FooterHeading>Contact Me</FooterHeading>
@@ -172,11 +204,11 @@ function Homescreen(){
                 </IconContainer2>
 
 
-                <p>None of the items(icons or images) used in the website are owned or created by me</p>
+                <p>None of the icons used in the website are developed or owned by me.</p>
                 <p>Website developed by Saurabh Pandey - No commercial purposes intended, made only for showing web development</p> 
-                <p className = "endline"> techniques and to be included as a piece of portfolio. All icon copyrights are owned by FontAwesome, Codechef, Codeforces and C++.</p>
-                
+                <p className = "endline"> techniques and to include it as a piece of portfolio. All icon copyrights are owned by FontAwesome, Codechef, Codeforces and C++.</p>
             </Footer>
+
         </Main>
     )
 }
@@ -184,24 +216,68 @@ function Homescreen(){
 export default Homescreen;
 
 const Main = styled.div`
-    // background-color: black;
+    background-color: black;
 `
 
-const HomeIconContainer = styled.div`
+const Details = styled.div`
+    height: calc(250vh);
+    width: calc(100vw);
+    background-color: black;
+    z-index: -1;
+    transition: all ease-out 0.5s;
+`
+
+const Heading = styled.h1`
+    margin-top: 0px;
+    font-size: 50px;
+    text-align: center;
+`
+
+const Aboutme = styled.div`
+    margin-top: 5%;
+    transition: 1s opacity;
+    text-align: center;
+    font-size: x-large;
+`
+
+const Projects = styled.div`
+    margin-top: 5%;
+    text-align: center;   
+`
+
+const ProjectSampleAbout = styled.div`
     display: flex;
-    width: 20%;
-    height: 10%;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: x-large;
+    border: solid white 1px;
+`
+
+const Skills = styled.div`
+    margin-top: 5%;
+`
+
+const ProjectSamples = styled.div`
+    width: calc(90vw);
+    margin: auto;
+    display: flex;
+    flex-direction: column
+`
+
+const SampleImg = styled.img`
+    height: 256px;
+    width: auto;
+    transition: ease all 0.2s;
+
 `
 
 const HomescreenImg = styled.img`
     margin-top: 10%;
     margin-right: 10%;
     width: auto;
-    height: 60%;
+    height: 50%;
     border-radius: 100%;
     transition: ease-out all 0.3s;
-`
+`   
 
 const Onmr = styled.div`
     display: flex;
@@ -210,49 +286,21 @@ const Onmr = styled.div`
     width: 70%;
     height: 80px;
     justify-content: space-between;
-`
-const Homescreen2 = styled.div`
-    height: 20%;
-    background-color: black;
-    height: calc(50vh);
-    z-index: -1;
-    transition: all ease-out 0.5s;
-`
-const Aboutmeheading = styled.h1`
-    margin-top: 0px;
+    transition: ease-in-out 0.2s all;
+
+    &:hover{
+        /* scale: 1.25; */
+        transition: ease-in-out 0.2s all;
+        -webkit-transform : scale(1.25);
+    }
 `
 
-const Aboutme = styled.div`
-    margin-top: 0px;
-    opacity: 1;
-    transition: 1s opacity;
-    text-align: center;
-    font-size: x-large;
-`
-
-const Homescreen3 = styled.div`
-    // margin: auto;
-    // linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
-    height: 20%;
-    background-color: black;
-    height: calc(85vh);
-    z-index: -1;
-    color: white;
-`
-
-const Skills = styled.h1`
-    margin-top: 0px;
-    font-size: 50px;
-    width: 100%;
-    text-align: center;
-`
 const IconContainerDiv = styled.div`
     display: flex;
     justify-content: space-between;
 `
 
 const IconContainer = styled.div`
-    // padding-top: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -270,7 +318,7 @@ const IconDiv = styled.div`
         transition: ease-in-out all 0.2s;
 
         &:hover {
-            scale: 1.25;
+            -webkit-transform : scale(1.25);
         }
     }
 `
@@ -280,6 +328,7 @@ const Footer = styled.div`
     color: white;
     font-size: x-large;
     height: calc(65vh);
+    width: calc(100vw);
     background-color: rgb(9, 10, 92);
 `
 
